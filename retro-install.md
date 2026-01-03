@@ -15,6 +15,8 @@ cd ~/retro
 git clone --recurse-submodules git@github.com:Z80-Retro/2063-Z80-cpm.git
 git clone git@github.com:Z80-Retro/2065-Z80-programmer.git
 git clone git@github.com:Z80-Retro/example-filesystem.git
+git clone git@github.com:Z80-Retro/pcb-standoffs
+git clone git@github.com:Z80-Retro/2068-Z80-TMS9118
 
 cd ~/retro/2065-Z80-programmer/pi
 make world
