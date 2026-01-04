@@ -7,7 +7,7 @@ The following commands have been verified on a Raspberry PI configured as descri
 
 ```
 sudo apt install build-essential libi2c-dev z80asm cpmtools
-sudo apt install kicad
+#sudo apt install kicad                # not needed on a headless system
 sudo apt install minicom
 
 GIT_REPOS=http://github.com/Z80-Retro  # Use this for anonymous downloading (if you don't have a github account)
