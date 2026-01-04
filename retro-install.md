@@ -5,7 +5,7 @@ You might have to change the `apt` commands to use your system's package manager
 
 The following commands have been verified on a Raspberry PI configured as described here: https://github.com/johnwinans/raspberry-pi-install
 
-The `make burn` command requires an SD card has been partioned and installed at `/dev/sdb1`.  
+The `make burn` command requires an SD card has been partioned and installed at `/dev/sdb1`.  (Different SD card adapters might appear with a different name.  Alter `SD_DEV` in the script accordingly.)
 The process of partioning an SD for this purpose on a Raspberry PI is discussed here: https://github.com/Z80-Retro/2063-Z80-cpm/blob/main/README-SD.md
 
 ```
