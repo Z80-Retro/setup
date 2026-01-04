@@ -1,9 +1,12 @@
 # Installing everything needed for Z80-Retro! development
 
-Other than for the task of programming the boot FLASH with a Raspberry PI, the following should work on most Linux systems.
+The following should work on most Linux systems.
 You might have to change the `apt` commands to use your system's package manager if you are not using a Debian style system.
 
 The following commands have been verified on a Raspberry PI configured as described here: https://github.com/johnwinans/raspberry-pi-install
+
+The `make burn` command requires an SD card has been partioned and installed at `/dev/sdb1`.  
+The process of partioning an SD for this purpose on a Raspberry PI is discussed here: https://github.com/Z80-Retro/2063-Z80-cpm/blob/main/README-SD.md
 
 ```
 sudo apt install build-essential libi2c-dev z80asm cpmtools
@@ -31,9 +34,9 @@ SD_DEV=/dev/sdb1
 EOF
 make
 cd boot
-~/retro/2065-Z80-programmer/pi/flash < firmware.bin
+~/retro/2065-Z80-programmer/pi/flash < firmware.bin  # only works on a PI connected to the Retro! flash programmer board
 cd ../filesystem
-make burn
+make burn                                            # only works if a partioned SD card is inserted in the system
 minicom -D /dev/ttyUSB0
 ```			
 
